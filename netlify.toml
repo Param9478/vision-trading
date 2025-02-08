@@ -1,6 +1,4 @@
-my-vite-app/
-├── public/
-├── src/
-├── netlify.toml
-├── package.json
-└── vite.config.js
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
