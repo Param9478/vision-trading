@@ -1,0 +1,27 @@
+// App.jsx
+import { Routes, Route } from 'react-router-dom';
+// import { Home, Charts, Bots, About, Contact } from './pages';
+import Home from './pages/Home';
+import Charts from './pages/Charts';
+import Bots from './pages/Bots';
+import About from './pages/About';
+import Contact from './pages/Contact';
+// import { Header, Footer } from './components';
+import Header from './components/Header';
+import Footer from './components/Footer';
+
+export default function App() {
+  return (
+    <div className="dark:bg-gray-900 min-h-screen">
+      <Header />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/charts" element={<Charts />} />
+        <Route path="/bots" element={<Bots />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/contact" element={<Contact />} />
+      </Routes>
+      <Footer />
+    </div>
+  );
+}
