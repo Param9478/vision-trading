@@ -3,60 +3,64 @@ export default function Footer() {
   return (
     <footer className="bg-gray-900 text-gray-400 py-8 mt-16">
       <div className="container mx-auto px-4">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-          <div>
+        <div className="flex flex-col items-center sm:flex-row sm:items-start sm:justify-between gap-8">
+          <div className="text-center sm:text-left">
             <h3 className="text-white text-lg font-bold mb-4">VisionTrading</h3>
             <p className="text-sm">
               Empowering traders with advanced tools and education.
             </p>
           </div>
 
-          <div>
-            <h4 className="text-white mb-4">Products</h4>
-            <ul className="space-y-2 text-sm">
+          <div className="text-center sm:items-start">
+            <h4 className="text-white mb-4 font-semibold text-center">
+              Products
+            </h4>
+            <ul className="flex space-x-4 text-sm">
               <li>
-                <a href="/bots" className="hover:text-white">
+                <a
+                  href="/bots"
+                  className="hover:text-blue-500 transition-colors"
+                >
                   Trading Bots
                 </a>
               </li>
               <li>
-                <a href="/charts" className="hover:text-white">
+                <a
+                  href="/charts"
+                  className="hover:text-blue-500 transition-colors"
+                >
                   Live Charts
                 </a>
               </li>
               <li>
-                <a href="/education" className="hover:text-white">
+                <a
+                  href="/education"
+                  className="hover:text-blue-500 transition-colors"
+                >
                   Courses
                 </a>
               </li>
             </ul>
           </div>
 
-          <div>
-            <h4 className="text-white mb-4">Legal</h4>
-            <ul className="space-y-2 text-sm">
-              <li>
-                <a href="/terms" className="hover:text-white">
-                  Terms of Service
-                </a>
-              </li>
-              <li>
-                <a href="/privacy" className="hover:text-white">
-                  Privacy Policy
-                </a>
-              </li>
-              <li>
-                <a href="/risk" className="hover:text-white">
-                  Risk Disclosure
-                </a>
-              </li>
-            </ul>
-          </div>
-
-          <div>
-            <h4 className="text-white mb-4">Contact</h4>
-            <p className="text-sm">support@visiontrading.com</p>
-            <p className="text-sm">+1 (555) 123-4567</p>
+          <div className="text-center sm:text-left">
+            <h4 className="text-white mb-4 font-semibold">Contact</h4>
+            <p className="text-sm">
+              <a
+                href="mailto:support@visiontrading.com"
+                className="hover:text-blue-500 transition-colors"
+              >
+                support@visiontrading.com
+              </a>
+            </p>
+            <p className="text-sm">
+              <a
+                href="tel:+15551234567"
+                className="hover:text-blue-500 transition-colors"
+              >
+                +1 (555) 123-4567
+              </a>
+            </p>
           </div>
         </div>
 

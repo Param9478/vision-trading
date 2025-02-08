@@ -12,7 +12,7 @@ import Footer from './components/Footer';
 
 export default function App() {
   return (
-    <div className="dark:bg-gray-900 min-h-screen">
+    <div className="min-h-screen bg-gray-900">
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
