@@ -1,7 +1,7 @@
 // App.jsx
 import { Routes, Route } from 'react-router-dom';
 
-import Home from './pages/Home';
+import Home from './pages/home/Home';
 import Charts from './pages/Charts';
 // import Bots from './pages/Bots';
 // import About from './pages/About';
