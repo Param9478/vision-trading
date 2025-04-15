@@ -1,16 +1,16 @@
 // pages/Home.jsx
 
 import PriceChart from '../../components/PriceChart';
+import { SplineShowcase } from '../../components/SplineShowcase';
 import SubscriptionForm from './SubscriptionForm';
-
 
 export default function Home() {
   return (
     <div className="container mx-auto px-4 py-12">
       {/* Hero Section */}
-      <div className="text-center mb-20 relative overflow-hidden p-6 rounded-2xl">
-        <div className="absolute inset-0 bg-gradient-to-r from-gray-900 to-gray-800 opacity-90"></div>
-        <div className="relative z-10">
+      <div className="text-center relative overflow-hidden rounded-2xl mb-20">
+        <SplineShowcase scene="https://prod.spline.design/kZDDjO5HuC9GJUM2/scene.splinecode" />
+        {/* <div className="relative z-10">
           <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 animate-fade-in">
             Master Trading with{' '}
             <span className="text-teal-400">AI-Powered Tools</span>
@@ -33,7 +33,7 @@ export default function Home() {
               Live Charts
             </a>
           </div>
-        </div>
+        </div> */}
       </div>
 
       {/* Features Section */}
