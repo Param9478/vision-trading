@@ -5,7 +5,9 @@ export default function Footer() {
       <div className="container mx-auto px-4">
         <div className="flex flex-col items-center sm:flex-row sm:items-start sm:justify-between gap-8">
           <div className="text-center sm:text-left">
-            <h3 className="text-white text-lg font-bold mb-4">VisionTrading</h3>
+            <h3 className="text-white text-lg font-bold mb-4">
+              Trade with Scholars
+            </h3>
             <p className="text-sm">
               Empowering traders with advanced tools and education.
             </p>
@@ -47,10 +49,10 @@ export default function Footer() {
             <h4 className="text-white mb-4 font-semibold">Contact</h4>
             <p className="text-sm">
               <a
-                href="mailto:support@visiontrading.com"
+                href="mailto:support@tradewithscholars.com"
                 className="hover:text-blue-500 transition-colors"
               >
-                support@visiontrading.com
+                support@tradewithscholars.com
               </a>
             </p>
             <p className="text-sm">
@@ -66,7 +68,8 @@ export default function Footer() {
 
         <div className="border-t border-gray-800 mt-8 pt-4 text-center text-sm">
           <p>
-            © {new Date().getFullYear()} VisionTrading. All rights reserved.
+            © {new Date().getFullYear()} Trade with Scholars. All rights
+            reserved.
           </p>
         </div>
       </div>

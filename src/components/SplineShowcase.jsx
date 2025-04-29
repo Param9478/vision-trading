@@ -1,19 +1,33 @@
+import { useRef, useState, useEffect, useCallback } from 'react';
 import {
-  Suspense,
-  lazy,
-  useRef,
-  useState,
-  useEffect,
-  useCallback,
-} from 'react';
-import { motion, useSpring, useTransform } from 'framer-motion';
-
-const Spline = lazy(() => import('@splinetool/react-spline'));
+  motion,
+  useSpring,
+  useTransform,
+  AnimatePresence,
+} from 'framer-motion';
 
 export function SplineShowcase({ scene, size = 200 }) {
   const containerRef = useRef(null);
   const [isHovered, setIsHovered] = useState(false);
   const [parentElement, setParentElement] = useState(null);
+  const [textIndex, setTextIndex] = useState(0);
+
+  // Just changing the highlighted words in the heading
+  const changingText = [
+    'AI-Powered Tools',
+    'Expert Strategies',
+    // 'Profitable Trading',
+    // 'Market Mastery',
+  ];
+
+  // Rotate text every 3 seconds
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setTextIndex((current) => (current + 1) % changingText.length);
+    }, 4000);
+
+    return () => clearInterval(interval);
+  }, [changingText.length]);
 
   const mouseX = useSpring(0, { bounce: 0 });
   const mouseY = useSpring(0, { bounce: 0 });
@@ -79,7 +93,18 @@ export function SplineShowcase({ scene, size = 200 }) {
         <div className="flex-1 p-8 flex flex-col justify-center text-white relative z-10">
           <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 animate-fade-in">
             Master Trading with{' '}
-            <span className="text-teal-400">AI-Powered Tools</span>
+            <AnimatePresence mode="wait">
+              <motion.span
+                key={textIndex}
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0, y: -20 }}
+                transition={{ duration: 0.3 }}
+                className="text-teal-400 inline-block"
+              >
+                {changingText[textIndex]}
+              </motion.span>
+            </AnimatePresence>
           </h1>
           <p className="text-gray-300 text-xl mb-8 max-w-2xl mx-auto animate-fade-in delay-100">
             Unlock the power of real-time market data, automated trading bots,
@@ -90,13 +115,13 @@ export function SplineShowcase({ scene, size = 200 }) {
               href="/bots"
               className="bg-teal-600 text-white px-8 py-3 rounded-lg hover:bg-teal-700 transform hover:scale-105 transition-transform"
             >
-              Get Started
+              Trading Bots
             </a>
             <a
-              href="/charts"
+              href="/courses"
               className="border border-gray-700 text-white px-8 py-3 rounded-lg hover:border-teal-600 transform hover:scale-105 transition-transform"
             >
-              Live Charts
+              View Courses
             </a>
           </div>
         </div>

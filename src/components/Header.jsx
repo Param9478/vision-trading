@@ -22,10 +22,10 @@ export default function Header() {
             to="/"
             className="text-2xl font-bold flex items-center group"
           >
-            <span className="text-teal-400 mr-1 group-hover:text-teal-300 transition-colors">
+            <span className="text-white mr-1 group-hover:text-gray-200 transition-colors">
               Trade with
             </span>
-            <span className="text-white group-hover:text-gray-200 transition-colors">
+            <span className="text-teal-400 group-hover:text-teal-300 transition-colors">
               Scholars
             </span>
           </NavLink>

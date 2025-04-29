@@ -60,7 +60,7 @@ export default function About() {
 
             <div className="space-y-6 text-gray-300">
               <p>
-                VisionTrading was founded in 2023 by a team of experienced
+                Trade with Scholars was founded in 2023 by a team of experienced
                 traders, data scientists, and software engineers who recognized
                 a gap in the market for intelligent, accessible trading tools.
                 We combine the power of artificial intelligence and machine
@@ -117,9 +117,9 @@ export default function About() {
                   <p className="text-teal-400">CEO & Founder</p>
                   <p className="mt-3 text-gray-300">
                     With over 10 years of experience in algorithmic trading and
-                    financial technology, Rahul leads VisionTrading with a focus
-                    on innovation and user success. Previously, he worked at
-                    leading quantitative trading firms and holds degrees in
+                    financial technology, Rahul leads Trade with Scholars with a
+                    focus on innovation and user success. Previously, he worked
+                    at leading quantitative trading firms and holds degrees in
                     Computer Science and Finance.
                   </p>
                 </div>
@@ -156,10 +156,10 @@ export default function About() {
 
             <div className="space-y-6 text-gray-300">
               <p>
-                At VisionTrading, we're on a mission to democratize trading by
-                providing institutional-grade tools and education to traders of
-                all levels. We believe that with the right technology and
-                knowledge, anyone can achieve consistent trading success.
+                At Trade with Scholars, we're on a mission to democratize
+                trading by providing institutional-grade tools and education to
+                traders of all levels. We believe that with the right technology
+                and knowledge, anyone can achieve consistent trading success.
               </p>
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">

@@ -117,7 +117,7 @@ export default function Home() {
           {[
             {
               quote:
-                'VisionTrading has completely transformed my trading strategy. The bots are incredibly accurate, and the educational resources are top-notch.',
+                'Trade with Scholars has completely transformed my trading strategy. The bots are incredibly accurate, and the educational resources are top-notch.',
               name: 'John Doe',
             },
             {
