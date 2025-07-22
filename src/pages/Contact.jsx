@@ -61,9 +61,7 @@ export default function Contact() {
                 </div>
               </div>
               <h3 className="text-white font-medium">Email</h3>
-              <p className="text-gray-400 mt-1">
-                contact@tradewithscholars.com
-              </p>
+              <p className="text-gray-400 mt-1">tradewithscholars@gmail.com</p>
             </div>
 
             <div>
@@ -86,7 +84,7 @@ export default function Contact() {
                 </div>
               </div>
               <h3 className="text-white font-medium">Phone</h3>
-              <p className="text-gray-400 mt-1">+91 98765 43210</p>
+              <p className="text-gray-400 mt-1">+91 623 9654 863</p>
             </div>
 
             <div>
@@ -123,7 +121,7 @@ export default function Contact() {
         {/* Success Message */}
         {isSubmitted && (
           <div className="bg-green-900 text-green-300 p-4 rounded-lg mb-6">
-            Thank you for your message! We'll respond as soon as possible.
+            Thank you for your message! We&apos;ll respond as soon as possible.
           </div>
         )}
 

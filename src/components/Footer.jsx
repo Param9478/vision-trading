@@ -52,15 +52,15 @@ export default function Footer() {
                 href="mailto:support@tradewithscholars.com"
                 className="hover:text-blue-500 transition-colors"
               >
-                support@tradewithscholars.com
+                tradewithscholars@gmail.com
               </a>
             </p>
             <p className="text-sm">
               <a
-                href="tel:+15551234567"
+                href="tel:+916239654863"
                 className="hover:text-blue-500 transition-colors"
               >
-                +1 (555) 123-4567
+                +91 (623) 965-4863
               </a>
             </p>
           </div>
