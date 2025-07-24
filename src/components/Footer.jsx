@@ -52,7 +52,7 @@ export default function Footer() {
                 href="mailto:support@tradewithscholars.com"
                 className="hover:text-blue-500 transition-colors"
               >
-                tradewithscholars@gmail.com
+                tradewithscholar@gmail.com
               </a>
             </p>
             <p className="text-sm">
