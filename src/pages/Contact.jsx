@@ -174,7 +174,8 @@ export default function Contact() {
           <h3 className="text-white font-medium mb-4">Connect With Us</h3>
           <div className="flex justify-center space-x-6">
             <a
-              href="#"
+              href="https://www.facebook.com/share/1a3kB4xHTK/?mibextid=wwXIfr"
+              target="_blank"
               className="text-gray-400 hover:text-teal-400 transition-colors"
             >
               <span className="sr-only">Facebook</span>
@@ -192,7 +193,8 @@ export default function Contact() {
               </svg>
             </a>
             <a
-              href="#"
+              href="https://x.com/tradewscholars?s=21"
+              target="_blank"
               className="text-gray-400 hover:text-teal-400 transition-colors"
             >
               <span className="sr-only">Twitter</span>
@@ -206,7 +208,8 @@ export default function Contact() {
               </svg>
             </a>
             <a
-              href="#"
+              href="https://www.instagram.com/tradewithscholars?igsh=YW12ZGUwaG9sZGZm"
+              target="/blank"
               className="text-gray-400 hover:text-teal-400 transition-colors"
             >
               <span className="sr-only">Instagram</span>
